@@ -4,13 +4,13 @@
 
 No terminal, caso ja não tenho clonado o repositorio anteriormente, digite:
 
-```console
+```bash
 git clone https://github.com/ahhul/apoiobcc
 ```
 
 Isso vai criar uma pasta chamada `apoio bcc` no diretorio de onde você abriu o terminal. Caso você ja tenha essa pasta, abra o terminal a partir dela e digite:
 
-```console
+```bash
 git pull
 ```
 
@@ -22,7 +22,7 @@ Fazer as alterações necessárias no site nas páginas no seu pc.
 
 Quando terminar, compile com o comando e teste no seu pc se está tudo certo. Para compilar, dentro da pasta do repositório no seu pc, digite:
 
-```console
+```bash
 rvmsudo bundle exec jekyll serve
 ```
 
@@ -30,7 +30,7 @@ No navegador entrar em `localhost:4000` para testar.
 
 Após testar, para subir todas no github, faça
 
-```console
+```bash
 git status (para checar todos os arquivos que foram alterados)
 git add -A
 git commit -m "mensagem dizendo oq foi feito"
@@ -46,13 +46,13 @@ Pronto, agora as mudanças foram feitas no repositorio do github.
 
 Entrar na máquina do bcc:
 
-```console
+```bash
 ssh <seu-user>@bcc.ime.usp.br
 ```
 
 Entrar na sua pasta e atualizar o repositorio nela
 
-```console
+```bash
 git clone https://github.com/ahhul/apoiobcc
 git pull (depois que ja tiver clonado sempre use esse pra atualizar)
 rvmsudo bundle exec jekyll build (para rodar o site na máquina)

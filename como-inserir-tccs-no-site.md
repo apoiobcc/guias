@@ -9,25 +9,25 @@ Depois de ter salvado tudo no seu pc e ter feito todo arquivo .md, você deve en
 Para copiar os arquivos use o comando scp no ssh. 
 Na pasta do seu pc vc digita:
 
-```console
+```bash
 scp -r diretorio isis@143.107.44.20:/home/isis/tccs/2017/
 ```
 
 Esse ip vc consegue estando logado por ssh e digitando:
 
-```console
+```bash
 curl ifconfig.me
 ```
 
 Após transferir tudo pro seu usuário, vc no ssh vai entrar no root:
 
-```console
+```bash
 sudo su
 ```
 
 E mover tudo pra pasta raiz dos tccs do site do apoio:
 
-```console
+```bash
 mv diretorio /var/www/tccs/ano/
 ```
 

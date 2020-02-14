@@ -5,13 +5,13 @@ Obs: Só fazer isso uma vez, pois sobrescreve o arquivo somando no final (dobran
 
 Verificar no BD se foi inserido:
 
-```console
+```bash
 ssh <seu-user>@bcc.ime.usp.br
 ```
 
 Entrar na pasta do supernova (home). Entrar no banco:
 
-```console
+```bash
 sudo mysql supernova
 use supernova (para poder acessar)
 show tables;
@@ -22,7 +22,7 @@ Gerar os relatórios em generator, no site do supernova. Para isso só seleciona
 
 Copiar os relatórios para sua máquina:
 
-```console
+```bash
 > cd supernova/public/relatorios/disciplinas
 > cp **/*2019s1* /home/isis (manda para pasta os arquivos)
 > scp – r <seu-user>@bcc.ime.usp.br:~/reports./ (baixa para o seu pc os arquivos – criar essa pasta reports no seu pc)
@@ -30,7 +30,7 @@ Copiar os relatórios para sua máquina:
 
 Entre nessa pasta reports no seu pc e nela zip os arquivos:
 
-```console
+```bash
 zip -r nomeDoZip nomeDaPasta
 ```
 
@@ -38,7 +38,7 @@ zip -r nomeDoZip nomeDaPasta
 
 Na pasta do supernova:
 
-```console
+```bash
 ls -a
 vim .django.settings.py (mudar debbug para true ou deixar false e adicionar um e-mail para visualizar os logs - cuidado com a sintaxe pra não faltar vírgulas, isso trava o supernova).
 apache2ctl graceful (reseta o supernova – reinicia sem chutar quem está usando)
@@ -49,13 +49,13 @@ chmod 777 #nomeDaPasta (altera permissão, péssima prática, só use em caso de
 
 Entre no BD do supernova para criar um novo semestre:
 
-```console
+```bash
 ssh <seu-user>@bcc.ime.usp.br
 ```
 
 Entrar na pasta do supernova (home). Entrar no banco:
 
-```console
+```bash
 sudo mysql supernova
 use supernova (para poder acessar)
 show tables;
@@ -77,7 +77,7 @@ No BD do Supernova:
 
 Olhar na tabela encoding se foi inserido o arquivo com a lista de matérias. Aproveite para conferir o padrão do nome.
 
-```console
+```bash
 select * from encoding;
 ```
 
@@ -97,7 +97,7 @@ Confira se gerou certo os arquivos. Confira com os rcs se a lista de matérias e
 
 No terminal:
 
-```console
+```bash
 ssh <seu-user>@bcc.ime.usp.br
 sudo su
 cd /supernova/aeSupernova
