@@ -1,1 +1,1 @@
-Para informações mais completas, acesse o Manual do Apoio BCC disponível no drive.
+Para informações mais completas (e atualizadas), acesse o Manual do Apoio BCC disponível no drive.
